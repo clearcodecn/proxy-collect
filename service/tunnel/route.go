@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/clearcodecn/gost"
 	"github.com/tongsq/go-lib/logger"
-	"github.com/tongsq/gost"
 	"proxy-collect/config"
 	"proxy-collect/dto"
 	"proxy-collect/service/common"

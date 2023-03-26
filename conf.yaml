@@ -3,17 +3,17 @@ redis: #redis config
   MaxIdle: 0
   MaxActive: 10
   Network: tcp
-  Address: 127.0.0.1:6379
+  Address: 192.168.1.101:6379
   Password:
 database: #database config
   Dialect: mysql
-  Args: python:123456@(127.0.0.1:3306)/py?charset=utf8&loc=Local
+  Args: root:root@(192.168.1.101:3306)/ippool?charset=utf8&loc=Local
   MaxIdle: 5 #max idle connections count
   MaxOpen: 20 #max connections count
 api:
   host: 0.0.0.0
-  port: 8090
-  token: abc #调用api的token，不用较验可不配置
+  port: 30080
+  token:  #调用api的token，不用较验可不配置
 poolSize: 1000
 localIpDataPath: /tmp/local_ip_data.dat
 recheckCount: 10 #recheck count if ip is invalid
@@ -33,7 +33,7 @@ tunnels:
   -
     proto: http
     host: 0.0.0.0
-    port: 8888
+    port: 30081
     users:
       -
         username: root

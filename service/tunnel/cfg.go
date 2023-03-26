@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
+	"github.com/clearcodecn/gost"
 	"github.com/tongsq/go-lib/logger"
-	"github.com/tongsq/gost"
 	"proxy-collect/config"
 )
 

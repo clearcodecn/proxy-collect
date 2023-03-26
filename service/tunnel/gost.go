@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
+	"github.com/clearcodecn/gost"
 	"github.com/go-log/log"
 	"github.com/tongsq/go-lib/logger"
-	"github.com/tongsq/gost"
 	"proxy-collect/config"
 	"proxy-collect/dao"
 	"proxy-collect/dto"
